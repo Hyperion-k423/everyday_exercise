@@ -1,0 +1,35 @@
+a={
+    "wang":{
+        "bumen":"keji",
+        "gongzi":3000,
+         "jibie":1
+    },
+    "zhou":{
+         "bumen":"shichang",
+        "gongzi":5000,
+        "jibie":2
+    },
+    "lin":{
+        "bumen":"shichnag",
+        "gongzi":7000,
+        "jibie":3
+    },
+    "zhang":{
+        "bumen":"keji",
+        "gongzi":4000,
+        "jibie":1
+    },
+    "liu":{
+        "bumen":"shichang",
+        "gongzi":6000,
+        "jibie":2
+    }
+}
+print(a)
+for name in a:
+    if a[name]["jibie"]==1:
+        xinxi=a[name]
+        xinxi["jibie"]=2
+        xinxi["gongzi"]+=1000
+        a[name]=xinxi
+print(a)
